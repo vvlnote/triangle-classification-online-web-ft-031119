@@ -23,6 +23,7 @@ class Triangle
     end
       true
   end
+  
   def kind
     if all_sides_are_valid?
       if tw0_sides_exceeds_third_side
