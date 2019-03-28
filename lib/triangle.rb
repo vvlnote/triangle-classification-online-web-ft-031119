@@ -8,7 +8,7 @@ class Triangle
   end
   
   def all_sides_are_vald?
-    @side1 > 0 && @side2 > 0 && @sideside3_3 > 0 ? true : false
+    @side1 > 0 && @side2 > 0 && @side3 > 0 ? true : false
   end
   
   def two_sides_exceeds_third_side?
@@ -25,7 +25,7 @@ class Triangle
   end
   
   def kind
-    if all_sides_are_valid?
+    if all_sides_are_vald?
       if tw0_sides_exceeds_third_side
         
       else
