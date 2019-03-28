@@ -7,8 +7,13 @@ class Triangle
     @side_3 = side_3
   end
   
+  def all_sides_are_vald?
+    @side_1 >
+  end
   def kind
+    all_sides_are_valid?
     if @side_1 > 0 && @side_2 > 0 && @side_3 > 0
+      if (@side_1 + @side_2)
       
     else
       begin 
