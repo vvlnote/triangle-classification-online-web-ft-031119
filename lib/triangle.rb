@@ -30,7 +30,7 @@ class Triangle
         
       else
         begin
-          raise TriangeError
+          raise TriangleError
         end
       end
     else
