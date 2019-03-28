@@ -26,7 +26,7 @@ class Triangle
   
   def kind
     if all_sides_are_vald?
-      if two_sides_exceeds_third_side
+      if two_sides_exceeds_third_side?
         
       else
         begin
