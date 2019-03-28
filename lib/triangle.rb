@@ -15,7 +15,7 @@ class Triangle
     if @side1 + @side2 <= @side3
       return false 
     end
-    if @side12 + @side3 <= @side1
+    if @side2 + @side3 <= @side1
       return false 
     end
     if @side3 + @side1 <= @side2
