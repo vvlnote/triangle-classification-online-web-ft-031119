@@ -24,10 +24,17 @@ class Triangle
       true
   end
   
+  def is_equilateral?
+    @side1 == @side2 && @side2 == @side3 ? true : false
+  end
+  
   def kind
     if all_sides_are_vald?
       if two_sides_exceeds_third_side?
-        
+        if is_equilateral?
+          return :equilateral
+        elsif 
+        end
       else
         begin
           raise TriangleError
