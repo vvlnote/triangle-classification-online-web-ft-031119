@@ -29,11 +29,11 @@ class Triangle
   end
   
   def is_isosceles?
-    
+    @side1 == @side2 || @side2 == @side3 || @side3 == @side1 ? true: false
   end
   
   def is_scalene?
-    
+    @side1 != @side2 && @side2 != @side3 && @side3 != @side1 ? true : false
   end
   
   def kind
@@ -41,7 +41,10 @@ class Triangle
       if two_sides_exceeds_third_side?
         if is_equilateral?
           return :equilateral
-        elsif 
+        elsif is_scalene?
+          return :scalene
+        elsif is_isosceles?
+          return :isosceles
         end
       else
         begin
@@ -54,6 +57,7 @@ class Triangle
       end
     end
   end
+  
   class TriangleError < StandardError
     
   end
