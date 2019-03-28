@@ -15,13 +15,23 @@ class Triangle
     if @side1 + @side2 <= @side3
       return false 
     end
-    if 
+    if @side12 + @side3 <= @side1
+      return false 
+    end
+    if @side3 + @side1 <= @side2
+      return false 
+    end
+      true
   end
   def kind
-    all_sides_are_valid?
-    if @side_1 > 0 && @side_2 > 0 && @side_3 > 0
-      if (@side_1 + @side_2)
-      
+    if all_sides_are_valid?
+      if tw0_sides_exceeds_third_side
+        
+      else
+        begin
+          raise TriangeError
+        end
+      end
     else
       begin 
         raise TriangleError
